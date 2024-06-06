@@ -19,7 +19,7 @@ const nextConfig = {
 
   eslint: { dirs: ["."], ignoreDuringBuilds: true },
 
-  transpilePackages: ["@procuraqui/ui", "@procuraqui/shadcn-ui"],
+  transpilePackages: ["@repo/shadcn-ui"],
 
   images: {
     remotePatterns: [
