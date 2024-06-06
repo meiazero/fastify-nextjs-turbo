@@ -3,10 +3,11 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbo",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "dev": "pnpm run with-env next dev --turbo --port 3000",
+    "build": "pnpm run with-env next build",
+    "start": "pnpm run with-env next start",
+    "lint": "pnpm run with-env next lint",
+    "with-env": "dotenv -e ../../.env --"
   },
   "dependencies": {
     "@repo/shadcn-ui": "workspace:*",
