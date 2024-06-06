@@ -1,6 +1,6 @@
 {
   "name": "web",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "dev": "next dev --turbo",
@@ -17,6 +17,7 @@
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",
     "@repo/tsconfig": "workspace:*",
+    "dotenv-cli": "^7.4.2",
     "typescript": "5.3.3",
     "@types/node": "20.14.2",
     "@types/react": "18.3.3",

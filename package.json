@@ -1,5 +1,5 @@
 {
-  "name": "fastify-trpc-nextjs-turbo",
+  "name": "fastify-nextjs-turbo",
   "private": true,
   "scripts": {
     "build": "turbo build",
