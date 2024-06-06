@@ -27,15 +27,15 @@ const fastify = Fastify({
 fastify.register(FastifySwagger, {
   openapi: {
     info: {
-      title: "API de Agendamento",
-      description: "API de agendamento",
-      version: "0.0.2",
+      title: "API",
+      description: "API",
+      version: "0.0.1",
     },
     components: {
       securitySchemes: {
         bearerAuth: {
           type: "http",
-          scheme: "bearer",
+          scheme: "Bearer",
           bearerFormat: "JWT",
         },
       },
