@@ -102,11 +102,14 @@ fastify.get("/", (request, reply) => {
 
 fastify.register(healthCheck);
 
+const PORT = process.env.PORT || 3333;
+const HOST = process.env.HOST || "127.0.0.1";
+
 fastify
   .listen({
-    port: 3000,
-    host: "0.0.0.0",
+    port: PORT as unknown as number,
+    host: HOST,
   })
   .then(() => {
-    console.log("⚡️ HTTP server running on port 3000");
+    console.log(`⚡️ HTTP server running on port ${PORT}`);
   });

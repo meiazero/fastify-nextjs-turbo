@@ -4,11 +4,12 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "start": "node ./dist/server.js",
-    "build": "tsup src --format esm --minify",
-    "dev": "tsx watch src/server.ts",
-    "test": "tsx ./src/**/**.spec.ts",
-    "test:watch": "tsx watch ./src/**/**.spec.ts"
+    "start": "pnpm run with-env node ./dist/server.js",
+    "build": "pnpm run with-env tsup src --format esm --minify",
+    "dev": "pnpm run with-env tsx watch src/server.ts",
+    "test": "pnpm run with-env tsx ./src/**/**.spec.ts",
+    "test:watch": "pnpm run with-env tsx watch ./src/**/**.spec.ts",
+    "with-env": "dotenv -e ../../.env --"
   },
   "dependencies": {
     "@fastify/compress": "7.0.3",
